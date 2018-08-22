@@ -7,5 +7,5 @@ print(f"integer is {i}")
 f = 2.9
 print(f"float is {f}")
 
-b = true
+b = True
 print(f"boolean is {b}")
