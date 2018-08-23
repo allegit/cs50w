@@ -8,6 +8,7 @@ app = Flask(__name__)
 def index():
     now = datetime.datetime.now()
     my_birthday = now.month == 8 and now.day == 7
+    my_birthday = True
     return render_template("index.html", my_birthday=my_birthday)
 
 if __name__ == "__main__":
