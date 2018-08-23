@@ -1,7 +1,17 @@
 <!DOCTYPE>
+<html>
 <head>
-  <title>An improved headed python</title>
+  <title>Is it my birthday python</title>
+  <style>
+    body {
+      text-align: center;
+    }
 </head>
 <body>
-  <h1>{{ headline }}</h1>
+  {% if my_birthday %}
+    <h1>Yes! Happy Birthday!</h1>
+  {% else %}
+    <h1>NO</h1>
+  {% endif %}
 </body>
+</html>
