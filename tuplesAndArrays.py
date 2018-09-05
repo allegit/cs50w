@@ -20,3 +20,11 @@ print('a4[0]: ' + str(a4[0]))
 print()
 
 #tuples
+t1 = (1,2,3)
+t2 = (3.14159, 2.71828, 1.41421, 1.61803)
+t3 = ('Welcome', 'to', 'Morrisville')
+t4 = ('!')
+
+print(f't1: {t1}')
+print(f't2[0]: {t2[0]}')
+print ('t3 + t4: {}'.format(t3 + t4))
