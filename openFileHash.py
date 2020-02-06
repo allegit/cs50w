@@ -14,6 +14,6 @@ for line in result_f:
 result_f.close()
 print("The contents of the results file:")
 
-for each_score in scores.keys(): 
+for each_score in sorted(scores.keys(), reverse = True): 
 	print('Surfer ' + scores[each_score] + ' scored ' + each_score)
 
