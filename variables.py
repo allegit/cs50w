@@ -1,5 +1,5 @@
 '''
-Example to declare variables
+Example to declare variables and scoping
 '''
 
 f=100
