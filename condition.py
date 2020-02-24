@@ -2,7 +2,7 @@
 
 first_names = ["Poorna", "Kartik", "Ritvik", "Vasanth"]
 
-last_name = input()
+last_name = 'Alle'
 
 if (last_name == 'Alle'):
     print('The family members could be: ')
