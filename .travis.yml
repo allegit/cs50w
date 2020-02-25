@@ -6,3 +6,6 @@ script: python3 condition.py
 
 notifications:
   email: vasanth.alle@gmail.com
+  slack:
+    rooms:
+      - alleinc:#learn-python
