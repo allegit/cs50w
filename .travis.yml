@@ -5,7 +5,6 @@ python:
 script: python3 condition.py
 
 notifications:
-  email: vasanth.alle@gmail.com
   slack:
     rooms:
       - alleinc:6yncDJjTY33b9S0XeC5RWkkF#learn-python
