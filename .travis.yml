@@ -9,3 +9,4 @@ notifications:
   slack:
     rooms:
       - alleinc:#learn-python
+    on_success: always
