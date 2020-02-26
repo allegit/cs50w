@@ -2,7 +2,7 @@ language: python
 python:
   - "3.7"
   
-script: python3 condition.py
+script: python3 collections.py
 
 notifications:
   slack:
