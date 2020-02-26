@@ -4,6 +4,7 @@ first_names = ["Poorna", "Kartik", "Ritvik", "Vasanth"]
 
 last_name = 'Alle'
 
+print(__name__)
 if (last_name == 'Alle'):
     print('The family members could be: ')
     for i in first_names:
