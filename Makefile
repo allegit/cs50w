@@ -6,11 +6,11 @@ dep:
 	@echo "No dependencies found...."
 build:
 	@echo "Creating empty files...."
-	touch file-{1..10}.txt
+	touch file1.txt
 	ls
 test:
 	@echo `pwd`
 
 clean:
 	@echo "Cleaning up some files..."
-	rm -v *.txt
+	rm -v file1.txt
