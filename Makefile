@@ -1,17 +1,16 @@
 .DEFAULT_GOAL := build
 
 help:
-        @echo "Help unavailable now...."
+    @echo "Help unavailable now...."
 dep:
-        echo "No dependencies found...."
+    @echo "No dependencies found...."
 build:
-        echo "Building...."
-        @echo "Creating empty files...."
-        touch file-{1..10}.txt
-        ls
+    @echo "Creating empty files...."
+    touch file-{1..10}.txt
+    ls
 test:
-        echo `pwd`
+	echo `pwd`
 
 clean:
-        @echo "Cleaning up some files..."
-        rm -v *.txt
+    @echo "Cleaning up some files..."
+    rm -v *.txt
