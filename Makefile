@@ -21,14 +21,18 @@ clean:
 
 .PHONY: coat shoes mobile sweater socks trousers shirt pants undershirt
 
-# target    prerequisite           command
-# ------------------------------------------------
-coat:		shoes mobile sweater;  @echo put on $@
-shoes:		socks trousers;        @echo put on $@
-mobile:		trousers;              @echo put on $@
-sweater:	shirt;                 @echo put on $@
-socks:		;                      @echo put on $@
-trousers:	pants shirt;           @echo put on $@
-shirt:		undershirt;            @echo put on $@
-pants:		;                      @echo put on $@
-undershirt:	;                      @echo put on $@
+# An example of explicit and implicit rules
+# An explicit rule assigns the commands for several targets 
+
+coat shoes mobile sweater socks trousers shirt pants undershirt: ;	@echo put on $@
+
+# Implicit rule to state the pre-requisites only
+
+# target    prerequisite           
+# --------------------------------
+coat:		shoes mobile sweater
+shoes:		socks trousers
+mobile:		trousers
+sweater:	shirt
+trousers:	pants shirt
+shirt:		undershirt
