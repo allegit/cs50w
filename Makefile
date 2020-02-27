@@ -19,4 +19,16 @@ clean:
 	@echo "Cleaning up some files..."
 	rm -v file1.txt
 
-#SHELL := $(shell which bash)
+.PHONY: coat shoes mobile sweater socks trousers shirt pants undershirt
+
+# target    prerequisite           command
+# ------------------------------------------------
+coat:		shoes mobile sweater;  @echo put on $@
+shoes:		socks trousers;        @echo put on $@
+mobile:		trousers;              @echo put on $@
+sweater:	shirt;                 @echo put on $@
+socks:		;                      @echo put on $@
+trousers:	pants shirt;           @echo put on $@
+shirt:		undershirt;            @echo put on $@
+pants:		;                      @echo put on $@
+undershirt:	;                      @echo put on $@

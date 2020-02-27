@@ -5,6 +5,7 @@ python:
 script: 
   - python3 collections.py
   - make all
+  - make coat | nl
 
 notifications:
   slack:
