@@ -4,8 +4,7 @@ python:
   
 script: 
   - python3 collections.py
-  - make build
-  - make clean
+  - make all
 
 notifications:
   slack:
