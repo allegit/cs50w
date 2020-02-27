@@ -2,7 +2,7 @@
 
 all: target
 
-target: help dep build test clean
+target: help dep build clean
 
 help:
 	@echo "Help unavailable now...."
