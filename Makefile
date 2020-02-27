@@ -1,5 +1,9 @@
 .DEFAULT_GOAL := build
 
+all: target
+
+target: help dep build test clean
+
 help:
 	@echo "Help unavailable now...."
 dep:
@@ -14,3 +18,5 @@ test:
 clean:
 	@echo "Cleaning up some files..."
 	rm -v file1.txt
+
+#SHELL := $(shell which bash)
