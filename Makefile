@@ -21,10 +21,13 @@ clean:
 
 .PHONY: coat shoes mobile sweater socks trousers shirt pants undershirt
 
+# Declare a local variable
 # An example of explicit and implicit rules
 # An explicit rule assigns the commands for several targets 
 
-coat shoes mobile sweater socks trousers shirt pants undershirt: ;	@echo put on $@
+dress_articles = coat shoes mobile sweater socks trousers shirt pants undershirt
+
+$(dress_articles) :;	@echo put on $@
 
 # Implicit rule to state the pre-requisites only
 
