@@ -11,7 +11,7 @@ dep:
 build:
 	@echo "Creating empty files...."
 	touch file1.txt
-	ls
+	$(shell ls)
 test:
 	@echo `pwd`
 
